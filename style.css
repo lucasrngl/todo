@@ -1,0 +1,77 @@
+:root {
+    font-size: 62.5%;
+    --black: #121212;
+    --gray: #424242;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: var(--black);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+main h1 {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+main input {
+    height: 5rem;
+    width: clamp(60rem, 40vw, 80rem);
+    background-color: var(--black);
+    border: solid 1px var(--gray);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    color: #e6e6e6;
+    font-size: 1.4rem;
+}
+
+main input:focus {
+    background-color: var(--gray);
+}
+
+.task {
+    min-height: 5rem;
+    width: clamp(60rem, 40vw, 80rem);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1fa8c;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.task p {
+    max-width: 95%;
+    word-break: break-all;
+}
+
+.task button {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+}
+
+.task button img {
+    height: 15px;
+}
+
+.task button:hover {
+    cursor: pointer;
+}
